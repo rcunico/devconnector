@@ -5,15 +5,18 @@ const schema = mongoose.Schema;
 const UserSchema = new schema({
   name: {
     type: String,
-    required: true
+    required: true,
+    default: "John"
   },
   email: {
     type: String,
-    required: true
+    required: true,
+    default: "no email"
   },
   password: {
     type: String,
-    required: true
+    required: true,
+    default: "no password"
   },
   date: {
     type: Date,
